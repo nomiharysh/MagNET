@@ -207,22 +207,23 @@ td {
  *  ヘッダー
  ================================================*/
 header {
-	padding:30px 10px;
+	padding:10px 10px 0;
 	text-align: center;
-	height: 80vh;
+	height: 90vh;
 }
 header h1 {
 	z-index: 999;
+	position: relative;
 }
 header h1 img{
 	width: 25vw;
 }
 .summary {
 	margin: -100px auto 0;
+	position: relative;
 }
 .summary img {
 	width: 100%;
-	z-index: 1;
 }
 
 /*================================================
@@ -231,6 +232,8 @@ header h1 img{
 @media print, screen and (min-width:768px) {
 	nav {
 		z-index:3;
+		position: relative;
+		background:linear-gradient(180deg,#9b0f0f 0%,#9b0f0f 64%,#000 64%,#000 100%);
 	}
 	nav ul {
 		margin:0;
@@ -265,14 +268,8 @@ header h1 img{
 	nav li:hover > a:hover {
 		color:yellow;
 	}
-	ul.main {
-		background:#9b0f0f;
-	}
 	ul.main img {
 		width: 100px;
-	}
-	ul.sub {
-		background: #000;
 	}
 	nav ul.sub li:nth-child(1){
 		margin:0 1.5%;

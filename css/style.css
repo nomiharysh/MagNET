@@ -26,7 +26,11 @@ header {
 	box-sizing:border-box;
 	position:relative;
 	width:100%;
-	background:#fcfcfc;
+	height: 50vh;
+	background-position: center center;
+  background-repeat: repeat;
+  background-size: auto;
+	background: url("../images/bg.png");
 }
 
 nav {
@@ -205,8 +209,12 @@ td {
  ================================================*/
 header {
 	padding:30px 10px;
+	text-align: center;
 }
 
+header h1 img{
+	width: 20vw;
+}
 .summary {
 	position:absolute;
 	top:0;
@@ -233,8 +241,9 @@ header {
 		text-align:center;
 		list-style:none;
 	}
-	nav li:last-child li {
-		left:-50%;
+	nav li:first-child {
+		margin:0 0.5%;
+		margin-right: 0;
 	}
 	nav li a {
 		display:block;
@@ -249,7 +258,9 @@ header {
 	ul.main {
 		background:#9b0f0f;
 	}
-
+	ul.main img {
+		width: 100px;
+	}
 	ul.sub {
 		background: #000;
 	}

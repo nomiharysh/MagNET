@@ -17,7 +17,6 @@ body {
 }
 
 .inner {
-	position:relative;
 	width:1080px;
 	margin:0 auto;
 }
@@ -210,16 +209,20 @@ td {
 header {
 	padding:30px 10px;
 	text-align: center;
+	height: 80vh;
 }
-
+header h1 {
+	z-index: 999;
+}
 header h1 img{
-	width: 20vw;
+	width: 25vw;
 }
 .summary {
-	position:absolute;
-	top:0;
-	right:10px;
-	margin:0;
+	margin: -100px auto 0;
+}
+.summary img {
+	width: 100%;
+	z-index: 1;
 }
 
 /*================================================
@@ -245,6 +248,13 @@ header h1 img{
 		margin:0 0.5%;
 		margin-right: 0;
 	}
+	nav li:nth-child(2),
+	nav li:nth-child(4),
+	nav li:nth-child(5),
+	nav li:nth-child(6),
+	nav li:nth-child(9){
+		margin-top: 1%;
+	}
 	nav li a {
 		display:block;
 		padding:10px 0;
@@ -264,6 +274,13 @@ header h1 img{
 	ul.sub {
 		background: #000;
 	}
+	nav ul.sub li:nth-child(1){
+		margin:0 1.5%;
+	}
+	nav ul.sub li:nth-child(2){
+		margin-top: 0;
+	}
+
 	#spMenu {
 		display:none;
 	}

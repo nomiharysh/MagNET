@@ -26,10 +26,10 @@ header {
 	position:relative;
 	width:100%;
 	height: 50vh;
+	background: url("../images/bg.png");
 	background-position: center center;
   background-repeat: repeat;
   background-size: auto;
-	background: url("../images/bg.png");
 }
 
 nav {
@@ -234,6 +234,7 @@ header h1 img{
 		z-index:3;
 		position: relative;
 		background:linear-gradient(180deg,#9b0f0f 0%,#9b0f0f 64%,#000 64%,#000 100%);
+		box-shadow: none;
 	}
 	nav ul {
 		margin:0;
@@ -306,16 +307,6 @@ header h1 img{
 }
 
 /*================================================
- *  トピックパス（パンくずリスト）
- ================================================*/
-#topicpath {
-	font-size:12px;
-	margin-bottom:20px;
-	padding:2px;
-	background:#f1f1f1;
-}
-
-/*================================================
  *  サブコンテンツ
  ================================================*/
 .submenu li {
@@ -365,45 +356,65 @@ footer {
 	clear:both;
 }
 
+footer a {
+	text-decoration: none;
+}
+footer a:hover {
+	color:#A72126;
+}
 .footmenu {
 	width:100%;
 	padding:20px 0;
 	overflow:hidden;
-	background:#efede9;
+	background: url("../images/bg.png");
+	background-position: center center;
+  background-repeat: repeat;
+  background-size: auto;
 }
-.footmenu ul {
-	position:relative;
-	float:left;
-	left:50%;
-	margin:0;
-	padding:0;
+
+.ft-flex01 {
+	display: flex;
 }
-.footmenu li {
-	position:relative;
-	left:-50%;
-	float:left;
-	list-style:none;
-	margin:0;
-	padding:0 15px;
-	font-size:12px;
-	text-align:center;
+.ft-flex01 ul.ft-menu01 {
+	display: flex;
 }
-.footmenu a {
-	color:#333;
-	text-decoration:none;
+
+.ft-flex01 ul li{
+	list-style: none;
+	font-family: 'Slackey', cursive;
+	font-size: 20px;
+	padding: 2% 0 ;
 }
-.footmenu a:hover {
-	color:#333;
-	text-decoration:underline;
+
+.ft-flex02 {
+	display: flex;
+}
+.ft-flex02 ul {
+	padding-left: 5%;
+}
+
+.ft-flex02 ul li:first-child {
+	padding-top: 0;
+}
+
+.ft-flex02 img {
+	width: 30vw;
 }
 
 .copyright {
 	clear:both;
 	padding:20px 0;
 	font-size:11px;
-	text-align:center;
 	color:#efede9;
-	background:#2e2e2e;
+	background:#000;
+}
+/*================================================
+ *  トピックパス（パンくずリスト）
+ ================================================*/
+#topicpath {
+	font-size:14px;
+	font-weight: bold;
+	padding: 1% 0;
 }
 
 /*================================================
@@ -467,98 +478,38 @@ footer {
 }
 
 /*================================================
- *  スライドショー
+ *  トップページ
  ================================================*/
-/* スライドショー */
-.slide {
-	display:none;
-	position:relative;
-	overflow:hidden;
-	margin:20px 0;
+
+section.news h1{
+	background: url(../images/news-bg.png) center center;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 7% 0;
+	text-align: center;
+}
+section.news h1 img{
+	width: 15vw;
+}
+section.column h1{
+	background: url(../images/column-bg.png) center center;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 7% 0;
+	text-align: center;
+}
+section.column h1 img{
+	width: 17vw;
 }
 
-.slidePrev {
-	position:absolute;
-	cursor:pointer;
-	z-index:2;
+section .more{
+	background: url(../images/menu-bg.png);
+	box-sizing: border-box;
+	padding: 5% 0;
+	text-align: center;
 }
-
-.slideNext {
-	position:absolute;
-	cursor:pointer;
-	z-index:2;
-}
-
-.slidePrev img {
-	position:absolute;
-	width:50px !important;
-	height:60px !important;
-}
-
-.slideNext img {
-	position:absolute;
-	width:50px !important;
-	height:60px !important;
-}
-
-.slideInner {
-	position:relative;
-	margin:0 0 5px 0;
-	padding:0;
-}
-.slideInner li {
-	float:left;
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.slideInner li img {
-	margin:0 5px;
-	padding:0;
-}
-
-.filterPrev {
-	position:absolute;
-	left:0;
-	opacity:0.5;
-	filter:alpha(opacity=50);
-	background-color:#fff;
-}
-
-.filterNext {
-	position:absolute;
-	right:0;
-	opacity:0.5;
-	filter:alpha(opacity=50);
-	background-color:#fff;
-}
-
-.controlNav {
-	position:relative;
-	float:left;
-	left:50%;
-}
-.controlNav span {
-	position:relative;
-	left:-50%;
-	float:left;
-	margin:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-	width:10px;
-	height:10px;
-	overflow:hidden;
-	background:#ccc;
-	text-indent:-9999px;
-	vertical-align:middle;
-}
-.controlNav span:hover {
-	background:#999;
-	cursor:pointer;
-}
-.controlNav span.current {
-	background:#900000;
+section .more img{
+	width: 17vw;
 }
 
 /*================================================

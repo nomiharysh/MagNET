@@ -64,92 +64,54 @@ $(function($){
 	</div>
 </nav>
 
-<div id="contents">
-	<div id="topicpath"><a href="index.html">トップ</a> &gt; サンプルページ</div><!-- /#topicpath -->
-	<h2 id="sample">サンプルタグについて</h2>
-	<p>
-	以下、サンプルタグになります。ご利用の際は参考にしてみてください。
-	</p>
-	<h2>h2タグ</h2>
-	<h3>h3タグ</h3>
-	<h4>h4タグ</h4>
-	<h5>h5タグ</h5>
-	<h6>h6タグ</h6>
-	<p>
-	<em>強調（em）</em>
-	<strong>より強い強調（strong）</strong>
-	<ins>追加（ins）</ins>
-	<del>削除（del）</del>
-	<a href="#">テキストアンカー</a>
-	</p>
-	<blockquote>
-	引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。引用部分です。
-	</blockquote>
-	<h3>リスト</h3>
-	<h4>普通のリスト</h4>
-	<ul>
-		<li>普通のリスト1</li>
-		<li>普通のリスト2</li>
-		<li>普通のリスト3</li>
-	</ul>
-	<h4>番号付きリスト</h4>
-	<ol>
-		<li>番号付きリスト1</li>
-		<li>番号付きリスト2</li>
-		<li>番号付きリスト3<br>li要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。<br></li>
-	</ol>
-	<h4>デザインリスト</h4>
-	<p>
-	このようにリストマークをチェックマークにしたい場合は、ulタグに『class="list"』を追記してください。
-	</p>
-	<ul class="list">
-		<li>デザインリスト1</li>
-		<li>デザインリスト2</li>
-		<li>デザインリスト3<br>li要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。<br></li>
-	</ul>
-	<h4>定義リスト</h4>
-	<dl>
-		<dt>定義リスト1</dt>
-		<dd>定義した用語の説明</dd>
-		<dt>定義リスト2</dt>
-		<dd>定義した用語の説明</dd>
-		<dt>定義リスト3</dt>
-		<dd>定義した用語の説明<br>dd要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。しかし、dt要素にはインライン要素しか記述することができません。</dd>
-	</dl>
-	<h3>テーブル</h3>
-	<table>
-		<tbody>
-		<tr><th>見出し1</th><th>見出し2</th><th>見出し3</th><th>見出し4</th><th>見出し5</th></tr>
-		<tr><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		<tr><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		<tr><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		</tbody>
-	</table>
-	<table>
-		<tbody>
-		<tr><th>見出し1</th><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		<tr><th>見出し2</th><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		<tr><th>見出し3</th><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		<tr><th>見出し4</th><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		<tr><th>見出し5</th><td>セル1</td><td>セル2</td><td>セル3</td><td>セル4</td><td>セル5</td></tr>
-		</tbody>
-	</table>
-</div><!-- /#contents -->
+<section class="news">
+	<h1><img src="images/menu-news.png" alt="News!"></h1>
+	<div class="more"><img src="images/more01.png" alt="more"></div>
+</section><!-- /.news -->
+
+<section class="column">
+	<h1><img src="images/menu-column.png" alt="column"></h1>
+	<div class="more"><img src="images/more-02.png" alt="more"></div>
+</section><!-- /.column -->
 
 <footer>
+	<div class="inner">
+		<div id="topicpath"><a href="index.html">TOP</a> &gt; SAMPLE</div><!-- /#topicpath -->
+	</div>
+
 	<div class="footmenu">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="index.html">会社情報</a></li>
-			<li><a href="index.html">商品情報</a></li>
-			<li><a href="index.html">採用情報</a></li>
-			<li><a href="index.html">サイトポリシーについて</a></li>
-			<li><a href="index.html">プライバシーポリシーについて</a></li>
-			<li><a href="index.html">お問い合わせ</a></li>
-			<li><a href="sample.html">サイトマップ</a></li>
-		</ul>
+
+		<div class="inner ft-flex01">
+
+		<div><img src="images/ft-01.png" alt="MagnetWorld"></div>
+		<div class="">
+			<ul class="ft-menu01">
+				<li><a href="index.html">Tour Map</a></li>
+				<li><a href="index.html">Magnets</a></li>
+				<li><a href="index.html">News!</a></li>
+				<li><a href="index.html">Column</a></li>
+				<li><a href="index.html">About</a></li>
+			</ul>
+			<div class="ft-flex02">
+				<div>
+					<ul>
+						<li><a href="index.html">Asia</a></li>
+						<li><a href="index.html">Middle East</a></li>
+						<li><a href="index.html">Africa</a></li>
+						<li><a href="index.html">Oceania</a></li>
+						<li><a href="index.html">Europe</a></li>
+						<li><a href="index.html">North America</a></li>
+						<li><a href="index.html">Central & South America</a></li>
+					</ul>
+				</div>
+				<div><img src="images/ft-02.png" alt="sns"></div>
+			</div>
+		</div>
+
+	</div><!-- /.ft-flex01 -->
+
 	</div><!-- /.footmenu -->
-	<div class="copyright">Copyright &#169; 20XX - 20XX SITENAME All Rights Reserved.</div><!-- /.copyright -->
+	<div class="copyright"><div class="inner">Copyright &#169; MAGNET WORLD All Rights Reserved.</div></div><!-- /.copyright -->
 </footer>
 
 <div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->

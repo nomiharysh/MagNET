@@ -17,7 +17,7 @@ body {
 }
 
 .inner {
-	width:1080px;
+	width:1200px;
 	margin:0 auto;
 }
 
@@ -42,7 +42,7 @@ nav {
 }
 #contents {
 	overflow:hidden;
-	width:1080px;
+	width:1200px;
 	margin:20px auto;
 	background:#fff;
 }
@@ -207,19 +207,20 @@ td {
  *  ヘッダー
  ================================================*/
 header {
-	padding:10px 10px 0;
 	text-align: center;
-	height: 90vh;
+	height: 763px;
 }
 header h1 {
 	z-index: 999;
 	position: relative;
 }
 header h1 img{
-	width: 25vw;
+	width: 345px;
+	margin: 0;
+	padding: 0;
 }
 .summary {
-	margin: -100px auto 0;
+	margin: -70px auto 0;
 	position: relative;
 }
 .summary img {
@@ -364,7 +365,7 @@ footer a:hover {
 }
 .footmenu {
 	width:100%;
-	padding:20px 0;
+	padding:20px 0 0;
 	overflow:hidden;
 	background: url("../images/bg.png");
 	background-position: center center;
@@ -375,30 +376,43 @@ footer a:hover {
 .ft-flex01 {
 	display: flex;
 }
+.ft-flex01 .left {
+	width: 20%;
+}
+.ft-flex01 .left img {
+	width: 100%;
+}
 .ft-flex01 ul.ft-menu01 {
 	display: flex;
+	margin-bottom: 0;
+	justify-content: space-between;
 }
 
 .ft-flex01 ul li{
 	list-style: none;
 	font-family: 'Slackey', cursive;
 	font-size: 20px;
-	padding: 2% 0 ;
+	padding: 1% 0 ;
 }
 
 .ft-flex02 {
 	display: flex;
 }
+.ft-flex02 .menu{
+	width: 60%;
+}
 .ft-flex02 ul {
 	padding-left: 5%;
+	margin-bottom: 0;
 }
-
 .ft-flex02 ul li:first-child {
-	padding-top: 0;
+	margin-top: 0;
 }
-
-.ft-flex02 img {
-	width: 30vw;
+.ft-flex02 .sns {
+	width: 40%;
+}
+.ft-flex02 .sns img{
+	width: 100%;
 }
 
 .copyright {
@@ -408,6 +422,7 @@ footer a:hover {
 	color:#efede9;
 	background:#000;
 }
+
 /*================================================
  *  トピックパス（パンくずリスト）
  ================================================*/
@@ -491,6 +506,31 @@ section.news h1{
 section.news h1 img{
 	width: 15vw;
 }
+section .news-list ,
+section .news-list div ,
+section .column-list {
+	display: flex;
+}
+section .news-list div ,
+section .column-list div {
+	width:50%;
+	height: 400px;
+	overflow: hidden;
+}
+section .news-list .news01{
+	background: #A72126;
+}
+section .news-list div .news02{
+	background: #F2BC00;
+}
+section .news-list .news03{
+	background: #0066A8;
+}
+
+section .news-list div img,
+section .column-list div img{
+	width:100%;
+}
 section.column h1{
 	background: url(../images/column-bg.png) center center;
 	background-size: cover;
@@ -500,6 +540,9 @@ section.column h1{
 }
 section.column h1 img{
 	width: 17vw;
+}
+section .column-list .column01{
+	background: #007C36;
 }
 
 section .more{
